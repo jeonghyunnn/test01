@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "resources"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../20230921"
+		},
+		{
+			"path": "../HTML"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "20230922"
+	}
+}

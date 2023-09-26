@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  ul [padding-left; 20px;]
+</style>
+<body>
+  <form>
+  <fieldset>
+  <legend>납풉자정보</legend>
+<p>1.납품자명 : <input type="text" name="name"
+   placeholder="name"> <p>
+<p>2.Email :<input type="email" name="email" 
+ placeholder="anwer@naver.com"> </p>
+<p>3.홈페이지 : <input type="url" name="url"
+placeholder="http://"> </p>
+</fieldset>
+<br>
+<fieldset>
+  <legend>납풍정보</legend>
+<p> &bull; 상품명 : <input type="text" name="name"> </p>
+<p> &bull; 납품수량 : <input type="number" name="proc_qt" 
+placeholder="최소100"> </p>
+<p> &bull; 납품등급 :<input type="range" name="range" min="1"
+max="10" step="2" > </p>
+<p> &bull; 기타사항 :<br>
+  <textarea row="2" cols="30" name="content"  ></textarea> </p>
+</fieldset>
+<br>
+<input type="submit" value="send massage">
+</form>
+</body>
+</html>
