@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* table,td,th{border:1px solid blue;}
+  table{width:100%;}
+  td{text-align: center;}
+   caption{caption-side: bottom;}  */
+   #list {font-family: "Trebuchet Ms" ,sans-serif; width: 100%;}
+   #list td,#list th{
+    border:1px dotted gray;
+    text-align:center;
+   }
+   /* #list th{color:white; background-color: blue;}
+   #list tr.alt td {background-color: yellow;} */
+
+   /* 짝수행.홀수행 다르게하기 */
+tr:nth-child(odd){
+  background-color:yellow;
+}
+tr:nth-child(even){
+  background-color: green;
+}
+</style>
+<body>
+  <table>
+    <tr><th>이름</th><th>이메일</th></tr>
+    <tr><td>김철수</td><td>chul@google.com</td></tr>
+    <tr><td>김영희</td><td>young@google.com</td></tr>
+  </table>
+  <br>
+  <table border="1">
+    <caption>VIP 고객리스트</caption>
+    <tr><th>이름</th><th>이메일</th></tr>
+    <tr><td>김철수</td><td>young@google.com</td></tr>
+    <tr><td>김영희</td><td>young@google.com</td></tr>
+
+    <!-- 짝수행/홀수행 다르게하기 -->
+  </table>
+  <table id="list">
+    <tr><th>이름</th><th>이메일</th></tr>
+    <tr><td>김철수</td><td>chul@google.com</td></tr>
+    <tr class="alt"><td>김영희</td><td>young@google.com</td></tr>
+    <tr><td>홍길동</td><td>hong@google.com</td></tr>
+    <tr class="alt"><td>김수진</td><td>sujin@google.com</td></tr>
+</body>
+</html>
