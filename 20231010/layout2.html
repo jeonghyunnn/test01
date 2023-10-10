@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 연습2</title>
+</head>
+<style>
+    html, body,#wrapper{
+    width: 100%;
+    height: 100%;
+  }
+  #header{
+    width: 100%;
+    height: 20%;
+    background-color: pink;
+    display: flex;
+align-items: center; 
+justify-content: center;
+  }
+  #nav{width: 20%;
+  height: 60%;
+  background-color: orange;
+  display: inline-block;
+}
+  #content{width: 80%;
+  height: 60%;
+  background-color: yellow;
+  float: right;
+}
+#footer{
+  width: 100%;
+  height: 20%;
+  background-color: brown;
+  clear: both;
+  text-align: center;
+  display: flex;
+align-items: center; 
+justify-content: center;
+color:white;
+font-size: 13px;
+}
+h1{margin:0;}
+h4{text-indent: 5%;}
+#nav_img{
+  border:2px solid white;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+#innerContent{
+  padding: 3%;
+}
+</style>
+<body>
+  <div id="wrapper"> 
+    <div id="header"><h1>My Blog Page</h1></div>
+    <div id="nav"><h4>Links</h4>
+    <ul>
+      <li>
+        <a href="https://www.naver.com">W3C</a>
+        <li>
+          <a href="https://www.naver.com">MOZILLA</a>
+        </li>
+          <li>
+            <a href="https://www.naver.com">HTML Dogs</a>
+          </li>
+    </ul>
+      <img src="../resources/1.jpg"> <br>
+      <p>이정현</p>
+    </div>
+    <div id="content">
+      <div id="innerContent"> <H4>Semantic Tags</H4> 
+        <p>시멘틱 요소(Semantic elemets)들은 브라우저에게 요소의 의미나 
+        목적을 명확하게 알려주는 요소이다.
+        <h3>div와 span</h3>
+        <p>
+          &nbsp; div는 "divide"의 약자로서 페이지를 논리적인 섹션으로 분리하는데
+          사용되는 태그이다. span 요소는 인라인 요소로서 텍스트를 위한 
+          컨테이너로 사용할 수 있다.
+        </p>
+      </div>
+    </div>
+    <div id="footer"><h2>Copyright(c) 2023 Hong</h2></div> 
+
+</body>
+</html>
