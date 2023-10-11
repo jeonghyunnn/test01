@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>회원가입</h2> <br>
+    <form>
+        <fieldset>
+            <legend>필수 입력 사항</legend>
+            ID <input type="text" placeholder="아이디 10글자이내" 
+            > <input type="submit" value="중복 확인"><br>
+            비밀번호: <input type="password"
+             placeholder="영문,숫자,특수문자 포함 8자이상"> <br>
+             비밀번호 확인: <input type="password"><br>
+             Email: <input type="email"> 
+             <select name="email">
+                <option value="naver">naver</option>
+                <option value="daum">daum</option>
+                <option value="google" selected>직접입력</option>
+                <option value="hi">hi</option>
+        </fieldset> 
+    </form> 
+    <form>
+        <fieldset>
+            <legend>추가 정보</legend>
+            프로필 사진 <input type="submit" value="파일선택">
+        </fieldset>
+    </form>
+</body>
+</html>
