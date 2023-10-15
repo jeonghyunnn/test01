@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      * {
+box-sizing: border-box;
+  }
+  body {
+    margin: 0px;
+  }
+  .inner{
+    border: 3px solid black;
+    width: 100px; height: 100px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .one {background-color: blue;
+    float: right;
+
+  }
+  .two {background-color: pink;
+    float: right;
+  }
+  .three {background-color: green;
+    float: right;
+  }
+.four {background-color: red;
+    float: right;
+}
+.five{background-color: pink;
+    float: left;
+}
+.six{background-color: blue;
+    float: left;
+}
+.seven {background-color: red;
+    float: left;
+}
+.eight{background-color: green;
+    float: left;
+}
+
+.right{ float: right;
+
+}
+.left{float: left;
+
+}
+</style>
+<body>
+
+   <div class="inner one">블루</div>
+   <div class="inner two">핑크</div>
+   <div class="inner three" style="clear: both;">그린</div>
+   <div class="inner four">레드</div>
+   
+
+        <div class="inner five">핑크</div>
+        <div class="inner six" >블루</div>
+        <div class="inner seven" style="clear: both;">레드</div>
+        <div class="inner eight">그린</div>
+
+</body>
+</html>
