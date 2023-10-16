@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  * {box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+html, body, #wrapper{
+  width: 100%;
+  height: 100%;
+}
+#wrapper{
+  display: grid;
+  grid-template-rows: 1.5fr 5fr 1fr;
+  gap: 10px;    
+ }
+#header1 {
+  background-color:#ffff00;
+  display: flex;
+ align-items: center; 
+  flex-direction: column; 
+ justify-content: center;
+}
+#content {
+ background-color: antiquewhite; 
+  display: grid;
+grid-template-columns: 1fr 3fr;
+gap:10px;
+}
+#nav {
+  background-color: #e69999;
+  font-size: 30px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+#main {
+   background-color: #99e6e6; 
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+#footer {background-color:#9999e6 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+</style>
+<body>
+  <div id="wrapper">
+    <div id="header1">
+      <img src="../resources/1.jpg" width="30px">
+      <h2>Web Shopping</h2>
+    </div>
+    <div id="header2">
+    </div>
+    <div id="content">
+      <div id="nav">
+      </div>
+      <div id="main">
+        <div id="section1 " class="section"></div>
+      </div>
+      <div id="section2" class="section">
+        
+      </div>
+    </div>
+    <div id="footer"></div>
+  </div>
+ 
+
+</body>
+</html>
