@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #main {
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    border: solid red;
+  }
+  #nav {
+    border: solid red;
+  }
+</style>
+<body>
+  고객명 : <input type="name" placeholder="홍길동"> <br>
+  전화번호 : <input type="number" placeholder="010-1234-1234"> <BR>
+  Email : <input type="Email" placeholder="OOOOO@OOO.COM"> <BR> <br>
+    <fieldset id="nav">
+        <legend id="main">피자 사이즈</legend> <br>
+        <input type="radio" name="gender" id="small" >
+        <label for="small">small</label>
+      <br> <br>
+      <input type="radio" name="gender" id="medaium"> 
+        <label for="medaium">medaium</label>
+      <br> <br>
+       <input type="radio" name="gender" id="large"> 
+       <label for="large">large</label>
+    </fieldset> <br>
+    <fieldset id="nav">
+        <legend id="main">토핑 선택</legend> <br>
+        <input type="checkbox" name="gender" id="베이컨">
+        <label for="베이컨">베이컨</label>
+        <br><br>
+        <input type="checkbox" name="gender" id="치즈">
+        <label for="치즈">치즈</label>
+        <br><br>
+        <input type="checkbox" name="gender" id="양파">
+        <label for="양파">양파</label>
+        <br><br>
+        <input type="checkbox" name="gender" id="버섯">
+        <label for="버섯">버섯</label>
+        <br><br> 
+    </fieldset>
+    <br>
+   희망배송시간 : <input type="time" name="time"> <br>
+   배송시 요청사항 : <br>
+   <textarea>     </textarea> <br><br>
+ <button>주문하기</button>
+ <button>다시선택하기</button>
+</body>
+</html>
