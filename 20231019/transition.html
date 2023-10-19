@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition</title>
+</head>
+<style>
+  div {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: indianred;
+    /* transition-property: all;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out; */
+    transition: all 2s linear ;
+      /*
+     transition-property:all
+    transition 속성을 적용할 대상을 적어준다.
+    transition-duration 
+
+    transition 속성을 적용할 때 소요되는 시간을 적어준다*/
+    /* transition-delay
+
+    전환 효과가 나타나기 까지의 지연 시간을 설정한다. */
+    /* transition-delay: 2s; */
+
+    /* transition-timing-function
+    전환 효과의 시간당 속도를 설정한다.
+    linear:효과가 처음부터 끝까지 일정한 속도로 진행된다. 
+    ease:효과가 천천히 시작되어,빨라지고 마지막때는 다시 느려진다
+    ease-in:효과가 천천히 시작되고 점점 빨라진다
+    ease-out:효과가 빠르게 시작되고 천천히 느려진다
+    ease-in-out:효과가 천천히 시작되어,천천히 끝난다.*/
+    
+    
+  }
+  
+  .rotate45:hover {
+    transform-origin: 100% 0 ;
+    transform: rotate(360deg);
+  
+  }
+  .scaleTest:hover {
+
+    /* scale은 해당 요소의 크기를 주어진 배율만큼
+    늘리거나 줄인다. */
+    /* transform: scale(0.7,0.7); */
+    /* transform: scaleX(2); */
+    transform-origin: 100% 0 ;
+    transform: scaleY(2);
+  }
+  .skewTest:hover {
+transform: skew(45deg,45deg);
+transform-origin: 100% 0 ;
+  }
+  .translateTest:hover {
+    transform:translate(400px);
+    transform-origin: 100% 0 ;
+  }
+  .martrixTest:hover {
+    transform:matrix(2,0,0,2,200,200);
+    transform-origin: 100% 50% ;
+  }
+</style>
+<body>
+  <!-- 
+    transition을 사용하여 요소의 변경(tranform)을
+    정해진 시간동안 부드럽게 변화시킬 수 있다.
+   -->
+   <h1>transition Test</h1>
+   <h3>transition-property,transition-duratuion</h3>
+
+   <div class="rotate45">rotate(45deg)</div>
+   <h3>scale</h3>
+
+   <div class="scaleTest">scale</div>
+   <h3>skew</h3>
+
+   <div class="skewTest">skew</div>
+   <h3>translate</h3>
+
+   <div class="martrixTest">translate</div>
+   <h3>martrix</h3>
+
+   <div class="translateTest">martix</div>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
