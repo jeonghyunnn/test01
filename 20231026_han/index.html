@@ -18,9 +18,15 @@
   <script src="https://kit.fontawesome.com/c91ad4e0cf.js" 
   crossorigin="anonymous"></script>
   
-
+  
 </head>
 <body>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <header>
   <div class="container">
     <h1>
@@ -53,39 +59,46 @@
         </ul>
       </nav>
       <nav id="lnb">
+        <div id="panel"></div>
         <ul>
           <li class="main">
-            <a href=""></a>
+            <a href="">진료안내</a>
             <ul class="sub">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="">진료과/의료진</a></li>
+              <li><a href="">전문센터</a></li>
+              <li><a href="">클리닉</a></li>
+              <li><a href="">외래진료안내</a></li>
+              <li><a href="">입/퇴원안내</a></li>
+              <li><a href="">진료지원</a></li>
+              <li><a href="">의약품정보</a></li>
+              <li><a href="">건강정보</a></li>
             </ul>
           </li>
           <li class="main">
-            <a href=""></a>
+            <a href="">진료예약</a>
             <ul class="sub">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="">예약안내</a></li>
+              <li><a href="">예약확인</a></li>
+              <li><a href="">증명서발급</a></li>
+              <li><a href="">증명서발급</a></li>
+              <li><a href="">비급여진료비</a></li>
+
+              
             </ul>
           </li>
           <li class="main">
-            <a href=""></a>
+            <a href="">병원소개</a>
             <ul class="sub">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="">병원소개</a></li>
+              <li><a href="">병원소식</a></li>
+              <li><a href="">홍보동영상</a></li>
+              <li><a href="">정보공개</a></li>
+              <li><a href="">청렴센터</a></li>
+
+
             </ul>
           </li>
-          <li class="main">
-            <a href=""></a>
-            <ul class="sub">
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
-            </ul>
-          </li>
+     
           
         </ul>
       </nav>
@@ -95,8 +108,54 @@
   
 </header>
 
-<main></main>
+<main>
+  <div class="container">
+    <div id="silder">
+      <div><img src="../20231025_han/images/picture1.jpg" alt="슬라이더 이미지"/></div>
+      <div><img src="../20231025_han/images/picture2.jpg" alt="슬라이더 이미지"/></div>
+      <div><img src="../20231025_han/images/picture3.jpg" alt="슬라이더 이미지"/></div>
+      <div><img src="../20231025_han/images/picture4.jpg" alt="슬라이더 이미지"/></div>
+      <div><img src="../20231025_han/images/picture5.jpg" alt="슬라이더 이미지"/></div>
+    </div>
+    <script>
+      $("#silder").slick({
+        autoplay:true,
+        autoplaySpeed:1000,
+      slidesToShow:2,
+      slidesToScrool:3,
 
-<footer></footer>
+      });
+    </script>
+  </div>
+</main>
+
+<footer>
+<div id="footer_top">
+ <div class="container">
+    <a href="#">비급여 진료비</a>
+    <a href="#">환자권리장전</a>
+    <a href="#">고객현장</a>
+    <a href="#">정보공개</a>
+    <a href="#">청렴센터</a>
+    <a href="#">청렴도측정결과공개</a>
+  </div>
+</div>
+  <div id="footer_bottom">
+    <div class="container">
+    <div id="footer_bottom_left">
+      <a href="#">웹이용약관</a>
+      <a href="#" class="yellow">개인정보처리방침</a>
+      <a href="#">이메일무단수집거부</a>
+      <a href="#">고객의 소리</a>
+    </div>
+    <div>
+      <p>대표전화 : 1599-7123 말로거는전화 : 1636 + "충남대학교병원"이라고 말하세요!</p>
+        <p>(35015)대전광역시 중구 문화로 282 충남대학교병원 사업자번호 : 305-82-08811</p>
+          <p>COPYRIGHT BY CHUNGNAM NATIONAL UNIVERSITY HOSPITAL ALL RIGHTS RESERVED</p>
+    </div>
+    <div id="footer_bottom_right"></div>
+   </div>
+  </div>
+</footer>
 </body>
 </html>   
