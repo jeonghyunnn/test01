@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+const x1=+prompt(`가위바위보 입력`);
+const x2=+prompt(`가위바위보 입력`);
+let result="";
+
+if(x1=="가위") {
+    if(x2=="가위") {
+        result="무승부";
+    }else if(x2 =="바위") {
+        result="사람2 승";
+    }else{
+        result="사람1승";
+    }
+} else if(x1=="바위"){
+    if(x2 =="가위") {
+        
+    }
+}
+
+
+document.write(`<h1>첫번째 사람: ${person1} ${person2} = ${result}</h1>`)
+</script>
+</html>
