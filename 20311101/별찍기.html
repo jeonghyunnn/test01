@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  document.write(`<h1>별찍기 트리형</h1>`)
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+for(let i=1; i<=5; i++){
+  for(let j=1; j<=5-i; j++){
+    document.write(`&nbsp;`);
+  }
+  for (let k = 1; k<=2*i-1;  k++) {
+    document.write('*');
+  }
+   document.write('<br>');
+}
+document.write(`<hr>`);
+document.write(`<h2>별찍기 트리형 아래방향</h2>`);
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+for(let i=0; i<5; i++) {
+  for(let j=0; j < i; j++) {
+ document.write(`&nbsp`);
+  }
+  for(let k=5; k>i; k--){
+  document.write(`*`);
+}
+for (let z=4;z>i; z--) {
+  document.write(`*`);
+} 
+document.write(`<br>`);
+}
+
+//     *
+//    ***
+//   *****
+//  *******
+// *********
+//  *******
+//   *****
+//    ***
+//     *
+document.write(`<hr>`);
+for(let i=1; i<=5; i++){
+  for(let j=1; j<=5-i; j++){
+    document.write(`&nbsp;`);
+  }
+  for (let k = 1; k<=2*i-1;  k++) {
+    document.write('*');
+  }
+   document.write('<br>');
+}
+for(let i=0; i<4; i++) {
+  for(let j=0; j <= i; j++) {
+ document.write(`&nbsp`);
+  }
+  for(let k=4; k>i; k--){
+  document.write(`*`);
+}
+for (let z=3;z>i; z--) {
+  document.write(`*`);
+} 
+document.write(`<br>`);
+}
+</script>
+</html>
