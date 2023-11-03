@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>03-toDolist</title>
+</head>
+<style>
+  div {
+    width: 300px;
+    height: 600px;
+    border: 2px solid #c5c5c5;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    padding: 0 10px;
+    overflow: auto;
+  }
+  p {
+    background-color: palevioletred;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+  }
+</style>
+<body>
+  <input type="text" id="input" placeholder="할 일 적어"/>
+  <button onclick="clickFunc()">CLICK</button>
+  <div>
+ 
+  </div>
+
+</body>
+<script>
+  function clickFunc() {
+//1.input요소를 가져온다.
+const input=document.querySelector("input");
+//2.가져온 input요소의 value를 꺼낸다.
+const inputVal=input.value;
+//2-1가져온 value 공백("")이면 
+//내용을 입력햐주세요.라는 alert를 띄우고 함수종료
+if(inputVal=="") {
+  alert("내용을 입력해");
+  return;
+}
+//3.p태그를 만든다.
+const p=document.createElement("p");
+//4.만든 p태그에 가져온 input value를 넣는다.
+p.innerHTML=inputVal;
+//4.1 0~255 까지의 랜덤한 숫자 3개를 추출
+let colorArr =[];
+  for(let i=0; i<3; i++){
+    colorArr[i] = parseInt(Math.random()*256);
+  };
+ console.log(colorArr);
+
+//4.2 추출한 랜섬숫자로 p태그의 backgroundcolor를 바꿔준다
+// p.style.backgroundColor=`rgb(${colorArr[0]},${colorArr[1]},${colorArr[2]})`; (방법1)
+p.style.backgroundColor=`rgb(${colorArr.toString()})`; //(방법2)
+
+const luma=
+0.2126 * colorArr[0] + 0.7512 * colorArr[1]+0.072 * colorArr[2]+0.654
+console.log(luma);
+
+p.style.color =parseInt(luma) <=155 ? "white" :"black";
+//5.div요소를 가져온다.
+const div=document.querySelector("div");
+//6.가져온 div요소를 맞는 p태그를 추가
+  div.append(p);
+  //7.input value를 공백으로 바꿔준다
+  input.value="";
+  }
+</script>
+</html>
