@@ -15,7 +15,7 @@
     </ul>
     <h2>완료한 과목</h2>
     <ul id="done-list">
-      <li>프로그래밍 In Javascript</li>
+      <li>프2로그래밍 In Javascript</li>
       <li>핵심</li>
       <li>기초</li>
       <li>모던</li>
@@ -37,15 +37,19 @@
     const doingList = document.querySelector("#doing-list");
     const donelist = document.querySelector("#done-list");
 
-    doingList.children[2].nextElementSibling.style.backgroundColor = "pink";
+    // doneList.children[2].nextElementSibling.style.backgroundColor = "pink";
 
     //donelist.parentElement >>글씨색상 Blue
     // donelist.firstElementChild.parentElement.lastElementChild.style.color =
     //   "blue";
 
-    donelist.parentElement.children[1].lastElementChild.style.color = "blue";
+    donelist.children[1].style.fontSize = "38px";
+    donelist.parentElement.children[3].children[1].style.backgroundColor =
+      "blue";
     //doinglist.parentElement >>font-size :32px
     doingList.firstElementChild.parentElement.lastElementChild.style.fontSize =
       "50px";
+    doingList.parentElement.children[3].children[4].style.backgroundColor =
+      "red";
   </script>
 </html>
