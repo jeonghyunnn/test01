@@ -45,6 +45,27 @@
       });
     }
 
+    function wordRain() {
+      const words = document.querySelectorAll(".word");
+      console.log(words[0].getBoundingClientRect().bottom);
+      setInterval(function () {
+        words.forEach(function (el) {
+          const rectTop = el.getBoundingClientRect().top;
+          el.style.top = `${rectTop - 75}px`;
+          console.log(el.style.top);
+          if (el.getBoundingClientRect().bottom > 910) {
+            alert("game over");
+            el.remove();
+          }
+          // const colorArr = [];
+          // for (let i = 0; i < 3; i++) {
+          //   colorArr.push(Math.floor(Math.random() * 256));
+          // }
+          // el.style.color = `rgb(${colorArr.toString()})`;
+        });
+      }, 1000);
+    }
+
     const input = document.querySelector("#input");
     input.addEventListener("change", function () {
       const word = document.querySelector(`span[id=${input.value}]`);
@@ -52,15 +73,18 @@
         word.remove();
         const leftWords = document.querySelectorAll(".word");
         if (leftWords.length == 0) {
-          alert("Success!🍕");
+          alert("Success!👏");
           if (confirm("재도전하실?")) {
             window.location.reload();
           }
         }
       }
+
       input.value = "";
     });
 
     init();
+    wordRain();
+    input.focus();
   </script>
 </html>
