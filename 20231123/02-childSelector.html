@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-childSelector</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <p>여자에게 인기있는 남자들</p>
+    <ol>
+      <li>능력있는남자</li>
+      <li>돈 많은 남자</li>
+      <li>잘생긴 남자</li>
+      <li>프로그래머</li>
+    </ol>
+    <br />
+    <p>남자에게 있기있는 여자들</p>
+    <ol>
+      <li>에쁜여자</li>
+      <li>귀여운 여자</li>
+      <li>섹시한 여자</li>
+    </ol>
+  </body>
+  <script>
+    $("li:first")
+      .css("backgroundColor", "yellow")
+      .css("border", "2px solid red");
+    $("li:first-child").css("border", "2px solid red");
+    // $("li:only-child").css("backgroundColor", "blue");
+    $("li:nth-child(2)").not("li:first").css("backgroundColor", "pink");
+    // $("li").not("li:first").css("backgroundColor", "green");
+  </script>
+</html>
