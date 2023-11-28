@@ -20,10 +20,11 @@
       ><br /><br />
 
       text객체 (readonly) :
-      <input type="text" value="가나다" id="txtTest" /><br /><br />
+      <input type="text" value="가나다" id="txtTest" readonly /><br /><br />
 
       button객체(disabled) :
       <input type="button" value="실행" id="runBtn" />
+      <input type="button" value="실행취소" id="cancelBtn" />
     </form>
   </body>
   <script>
@@ -37,6 +38,19 @@
       const selectedEl = $("#selTest > option:selected");
       console.log(selectedEl.attr("selected"));
       console.log(selectedEl.prop("selected"));
+    });
+    $("#txtTest").on("click", function () {
+      const inputTag = $(`#txtTest`);
+      console.log(inputTag.attr("readonly"));
+      console.log(inputTag.prop("readonly"));
+    });
+
+    $("#runBtn").on("click", function () {
+      $("#runBtn").attr("disabled", true);
+    });
+
+    $("#cancelBtn").on("click", function () {
+      $("#runBtn").prop("disabled", false);
     });
   </script>
 </html>
