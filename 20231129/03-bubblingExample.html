@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <style>
+    div {
+      border: 3px solid orange;
+    }
+  </style>
+  <body>
+    <div>
+      <p>무궁화 꽃이 피었습니다</p>
+    </div>
+
+    <p id="pTag">굴굴이다</p>
+
+    <div>
+      <p>사뿐히 즈려밟고 가시옵소서</p>
+    </div>
+  </body>
+  <script>
+    // $("div").on("click", function (e) {
+    //   const pTag = e.target;
+    //   if (this != pTag) {
+    //     const txt = $(pTag).html();
+    //     $(this).append(`<p style="color:red;"> ${txt}</p`);
+    //   }
+    // });
+    $("div").on("click", "p", function () {
+      const parent = $(this).parent("div");
+      const txt = $(this).html();
+      $(parent).append(`<p style="color:red;"> ${txt}</p`);
+    });
+  </script>
+</html>

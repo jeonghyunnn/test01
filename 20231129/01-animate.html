@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <style>
+    div {
+      background-color: skyblue;
+      width: 300px;
+      height: 300px;
+      position: absolute;
+    }
+  </style>
+  <body>
+    <div>DIV</div>
+  </body>
+  <script>
+    $("div").on("click", function () {
+      // // $("div").animate({ left: "250px" });
+      // $("div").animate({
+      //   left: "250px",
+      //   top: "250px",
+      //   oppcity: "0.3",
+      //   height: "500px",
+      //   width: "500px",
+      // });
+      $("div").animate({ height: "600px", opacity: 0.3, fontSize: "2em" });
+      $("div").animate({ width: "600px", opacity: 0.8, fontSize: "3em" });
+      $("div").animate({ height: "300px", opacity: 0.3, fontSize: "4em" });
+      $("div").animate({ width: "300px", opacity: 0.8, fontSize: "5em" });
+      $("div").animate({
+        width: "300px",
+        opacity: 0.8,
+        fontSize: "5em",
+        backgroundColor: "red",
+      });
+    });
+  </script>
+</html>
