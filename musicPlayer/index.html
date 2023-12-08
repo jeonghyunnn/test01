@@ -110,4 +110,14 @@
       </div>
     </section>
   </body>
+  <script>
+    const wraps = document.querySelectorAll(".wrap");
+    wraps.forEach(function (el, idx) {
+      el.addEventListener("click", function () {
+        if (idx === 0) {
+          location.href = "musicPlayer.html";
+        }
+      });
+    });
+  </script>
 </html>
